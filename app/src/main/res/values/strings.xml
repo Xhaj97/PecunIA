@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">PecunIA</string>
+
+    <string name="button1">Prendre une nouvelle photo</string>
+    <string name="button2">Selectionner une image depuis la gallerie</string>
+    <string name="logo_description">logo</string>
+</resources>
