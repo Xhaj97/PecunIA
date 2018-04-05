@@ -12,8 +12,7 @@ import android.widget.ImageView;
 
 public class MainActivity extends Activity {
 
-    public static final int CAMERA_PIC_REQUEST = 88;
-    public static final int CAMERA_REQUEST_CODE = 11;
+    public static final int REQUEST_IMAGE_CAPTURE = 11;
     Button mTake_Pic;
     Button mSelect_Pic;
 
@@ -28,8 +27,10 @@ public class MainActivity extends Activity {
         mTake_Pic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                startActivity(intent);
+                Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+                if (takePictureIntent.resolveActivity(getPackageManager()) != null) {
+                    startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE);
+                }
             }
         });
 
@@ -40,15 +41,4 @@ public class MainActivity extends Activity {
             }
         });
     }
-
-    /*
-    //calling request code of camera_request_code or Gallery_request_code
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data){
-        if(resultCode == RESULT_OK) {// if everything is working well
-            if(requestCode == CAMERA_REQUEST_CODE){
-
-            }
-        }
-    }*/
 }
