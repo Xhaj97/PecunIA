@@ -25,7 +25,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".Tutoriel" />
-        <activity android:name=".ResultActivity"></activity>
+        <activity android:name=".ResultActivity" />
+        <activity android:name=".A_propos"></activity>
     </application>
 
 </manifest>

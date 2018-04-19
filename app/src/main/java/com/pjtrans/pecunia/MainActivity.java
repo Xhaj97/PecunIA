@@ -32,7 +32,8 @@ public class MainActivity extends Activity {
 
     Button mTake_Pic;
     Button mSelect_Pic;
-    FloatingActionButton mInfo;
+    FloatingActionButton mInfo1; // a propos
+    FloatingActionButton mInfo2; // tutoriel
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,7 +44,8 @@ public class MainActivity extends Activity {
 
         mTake_Pic = findViewById(R.id.activity_main_take_picture);
         mSelect_Pic = findViewById(R.id.activity_main_select_picture);
-        mInfo = findViewById(R.id.floatingActionButton2);
+        mInfo1 = findViewById(R.id.floatingActionButton1);
+        mInfo2 = findViewById(R.id.floatingActionButton2);
 
         mTake_Pic.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -71,7 +73,15 @@ public class MainActivity extends Activity {
             }
         });
 
-        mInfo.setOnClickListener(new View.OnClickListener() {
+        mInfo1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent TapInfoIntent = new Intent(MainActivity.this, A_propos.class);
+                startActivity(TapInfoIntent);
+            }
+        });
+
+        mInfo2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent TapInfoIntent = new Intent(MainActivity.this, Tutoriel.class);

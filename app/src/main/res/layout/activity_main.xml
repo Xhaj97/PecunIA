@@ -8,15 +8,45 @@
     android:orientation="vertical"
     tools:context="com.pjtrans.pecunia.MainActivity">
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/floatingActionButton2"
-        android:layout_width="match_parent"
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="end"
-        android:clickable="true"
-        android:focusable="true"
-        android:src="@android:drawable/ic_dialog_info"
-        app:elevation="10dp" />
+        android:orientation="horizontal">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingActionButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@android:drawable/ic_dialog_info"
+            app:backgroundTint="@color/colorlogo"
+            app:elevation="0dp"
+            app:rippleColor="@android:color/holo_orange_dark" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingActionButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@id/floatingActionButton1"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="end"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="5dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@android:drawable/ic_menu_help"
+            app:backgroundTint="@color/colorlogo"
+            app:elevation="0dp"
+            app:rippleColor="@android:color/holo_orange_dark" />
+    </RelativeLayout>
+
 
     <ImageView
         android:id="@+id/imageView_logo"
@@ -39,7 +69,7 @@
         android:layout_width="233dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="30dp"
         android:layout_marginBottom="40dp"
+        android:layout_marginTop="30dp"
         android:text="@string/button2" />
 </LinearLayout>

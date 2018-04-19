@@ -4,9 +4,21 @@
     <string name="button1">Prendre une nouvelle photo</string>
     <string name="button2">Selectionner une image depuis la gallerie</string>
     <string name="logo_description">logo</string>
-    <string name="title_activity_tutoriel">Tutoriel</string>
-    <string name="help_text1"><b>1. Pour scanner des pièces veuillez soit :</b></string>
-    <string name="help_text2"><b>     - Prendre une photo</b></string>
-    <string name="help_text3"><b>     - Selectionner une image</b></string>
-    <string name="help_text4"><b>2. Et hop! Nous nous occupons du reste!</b></string>
+
+    <string name="help_text0"><b>Tutoriel</b></string>
+    <string name="help_text1">1. Pour scanner des pièces veuillez soit :</string>
+    <string name="help_text2"><b> - Prendre une photo</b></string>
+    <string name="help_text3"><b> - Selectionner une image</b></string>
+    <string name="help_text4">2. Et hop! Nous nous occupons du reste!</string>
+
+    <string name="propos_text0"><b>Projet réalisé par :  </b></string>
+    <string name="propos_text1"><b>  - VO Antoine </b>: Chef de Projet</string>
+    <string name="propos_text2"><b>  - FARGE Guillaume </b>: Respo. Technique</string>
+    <string name="propos_text3"><b>  - PHO Y.Shoun </b> : Respo. Graphique</string>
+    <string name="propos_text4"><b>  - LEGRAND Victor </b>: Respo. Communication</string>
+    <string name="propos_text5"><b>  - LE GALLIARD Richard </b>: Testeur Polyvalent</string>
+    <string name="propos_text6"><b>Copyright : PecunIA 2018 </b></string>
+
+
+
 </resources>
