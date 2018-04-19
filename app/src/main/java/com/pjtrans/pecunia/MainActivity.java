@@ -16,11 +16,14 @@ import android.widget.Button;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.xml.transform.Result;
+
 
 public class MainActivity extends Activity {
 
     public static final int REQUEST_IMAGE_CAPTURE = 11;
     public static final int MULTIPLE_PERMISSIONS = 22;
+    public static final int PICK_IMAGE = 1;
 
     String[] permissions= new String[]{
             Manifest.permission.WRITE_EXTERNAL_STORAGE,
@@ -55,7 +58,16 @@ public class MainActivity extends Activity {
         mSelect_Pic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //user clicked
+                Intent getIntent = new Intent(Intent.ACTION_GET_CONTENT);
+                getIntent.setType("image/*");
+
+                Intent pickIntent = new Intent(Intent.ACTION_PICK, android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+                pickIntent.setType("image/*");
+
+                Intent chooserIntent = Intent.createChooser(getIntent, "Select Image");
+                chooserIntent.putExtra(Intent.EXTRA_INITIAL_INTENTS, new Intent[] {pickIntent});
+
+                startActivityForResult(chooserIntent, PICK_IMAGE);
             }
         });
 
@@ -82,6 +94,20 @@ public class MainActivity extends Activity {
             return false;
         }
         return true;
+    }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data)
+    {
+        if (requestCode == REQUEST_IMAGE_CAPTURE){
+            Intent TapInfoIntent = new Intent(MainActivity.this, ResultActivity.class);
+            startActivity(TapInfoIntent);
+        }
+        else if(requestCode == PICK_IMAGE) {
+            //TODO: The picture analysis here
+            Intent TapInfoIntent = new Intent(MainActivity.this, ResultActivity.class);
+            startActivity(TapInfoIntent);
+        }
     }
 
     @Override
