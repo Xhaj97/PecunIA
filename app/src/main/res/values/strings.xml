@@ -4,4 +4,9 @@
     <string name="button1">Prendre une nouvelle photo</string>
     <string name="button2">Selectionner une image depuis la gallerie</string>
     <string name="logo_description">logo</string>
+    <string name="title_activity_tutoriel">Tutoriel</string>
+    <string name="help_text1"><b>1. Pour scanner des pièces veuillez soit :</b></string>
+    <string name="help_text2"><b>     - Prendre une photo</b></string>
+    <string name="help_text3"><b>     - Selectionner une image</b></string>
+    <string name="help_text4"><b>2. Et hop! Nous nous occupons du reste!</b></string>
 </resources>

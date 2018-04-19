@@ -7,6 +7,7 @@ import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.support.annotation.NonNull;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.view.View;
@@ -28,6 +29,7 @@ public class MainActivity extends Activity {
 
     Button mTake_Pic;
     Button mSelect_Pic;
+    FloatingActionButton mInfo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +40,7 @@ public class MainActivity extends Activity {
 
         mTake_Pic = findViewById(R.id.activity_main_take_picture);
         mSelect_Pic = findViewById(R.id.activity_main_select_picture);
+        mInfo = findViewById(R.id.floatingActionButton2);
 
         mTake_Pic.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,6 +56,14 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View v) {
                 //user clicked
+            }
+        });
+
+        mInfo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent TapInfoIntent = new Intent(MainActivity.this, Tutoriel.class);
+                startActivity(TapInfoIntent);
             }
         });
     }
