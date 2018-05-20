@@ -1,7 +1,6 @@
-Hello this is Antoine
+## PecunIA, the counting machine in your phone
 
-## Welcome to GitHub Pages
-
+We used some sources and tutorials as a reference to make our project. The links are below
 You can use the [editor on GitHub](https://github.com/siiscil/PecunIA/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
