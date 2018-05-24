@@ -24,4 +24,71 @@ Si vous ne souhaitez pas entraîner votre propre detecteur, vous pouvez directem
 ```
 Python 3.5
 Tensorflow
+Anaconda
+AndroidStudio
+Java
+OpenCV
 ```
+
+#### Téléchargement est mise en place de l'environnement Anaconda
+Pour installer l'environnement, veuillez télécharger [Anaconda](https://www.anaconda.com/download/), un gestionnaire d'environnement portable et versatile
+
+Après avoir téléchargé Anaconda, veuillez ouvrir la commande prompt et copier coller les lignes suivantes :
+
+```
+# pour installer l'environnement: (copy paste)
+# installer anaconda
+# lancer anaconda prompt
+# copier coller toutes les lignes suivantes
+
+conda create -n tensorflow1 pip python=3.5
+y
+activate tensorflow1
+pip install --ignore-installed --upgrade tensorflow-gpu
+conda install -c anaconda protobuf
+y
+pip install pillow
+pip install lxml
+pip install Cython
+pip install jupyter
+pip install matplotlib
+pip install pandas
+pip install opencv-python
+
+
+
+#pour activer l'environnement virtuel créé avec anaconda
+conda activate tensorflow1
+
+# pour changer de dossier (ici le projet est présent dans C:\tensorflow1\models\research\object_detection)
+cd C:\tensorflow1\models\research\object_detection
+
+#pour mettre une variable d'environnement nécessaire
+set PYTHONPATH=C:\tensorflow1\models;C:\tensorflow1\models\research;C:\tensorflow1\models\research\slim
+
+
+#pour avoir accès au tensorboard (après avoir exécuté la commande suivante, il faut ouvrir un navigateur et taper localhost:6006)
+tensorboard --logdir==training:C:\tensorflow1\models\research\object_detection\training --host=127.0.0.1
+
+
+# pour entrainer le model en fonction de la config utilisée 
+
+#config faster rcnn inception v2
+python train.py --logtostderr --train_dir=training/ --pipeline_config_path=training/faster_rcnn_inception_v2_pets.config
+
+#config ssd_mobilenet_v1_coco
+python train.py --logtostderr --train_dir=training/ --pipeline_config_path=training/ssd_mobilenet_v1_coco.config
+
+
+# pour exporter le graphe d'inférence (le graphe final qui ne sera plus entrainé, et qui permet la detection)
+# en fonction de la config:
+
+#config faster rcnn inception v2
+python export_inference_graph.py --input_type image_tensor --pipeline_config_path training/faster_rcnn_inception_v2_pets.config --trained_checkpoint_prefix training/model.ckpt-XXXX --output_directory inference_graph
+
+#config ssd_mobilenet_v1_coco
+python export_inference_graph.py --input_type image_tensor --pipeline_config_path training/ssd_mobilenet_v1_coco.config --trained_checkpoint_prefix training/model.ckpt-XXXX --output_directory inference_graph
+
+```
+
+Cela va générer automatiquement 
