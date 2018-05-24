@@ -31,7 +31,7 @@ OpenCV
 ```
 
 #### Téléchargement est mise en place de l'environnement Anaconda
-Pour installer l'environnement, veuillez télécharger [Anaconda](https://www.anaconda.com/download/), un gestionnaire d'environnement portable et versatile
+Pour installer l'environnement, veuillez télécharger [Anaconda](https://www.anaconda.com/download/) nous utilisons la version 3.6 mais rien n'empêche de prendre une version plus élevée ou inférieure car lors du lancement du script, on va créer un environnement 3.5 compatible avec tout le monde, un gestionnaire d'environnement portable et versatile
 
 Après avoir téléchargé Anaconda, veuillez ouvrir la commande prompt et copier coller les lignes suivantes :
 
@@ -91,4 +91,7 @@ python export_inference_graph.py --input_type image_tensor --pipeline_config_pat
 
 ```
 
-Cela va générer automatiquement 
+Cela va générer automatiquement un environnement de développement pour notre système.
+Pour tout autre problème, vous pouvez suivre ce le tutoriel de 
+
+
