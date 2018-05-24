@@ -99,3 +99,6 @@ Pour tout autre problème, vous pouvez suivre ce tutoriel :
 [Code permettant l'entrainement avec tensorflow](https://1drv.ms/u/s!AgScJCf_F-3CitYsUC4BeDeZPvph3Q)
 (le code se trouve dans tensorflow1/models/research/object_detection)
 
+Ensuite, suivre les instructions de cette vidéo :
+
+[![Watch the video](https://raw.githubusercontent.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10/master/doc/YouTube%20video.jpg)](https://www.youtube.com/watch?v=Rgpfk6eYxJA)
