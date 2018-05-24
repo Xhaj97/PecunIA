@@ -1,6 +1,8 @@
 
 
-## PecunIA, l'argent à bout de smartphone
+# PecunIA, l'argent à bout de smartphone
+
+*Dernière update le 24/05/2018.*
 
 L'ombre d'une ombre est noir.
 
@@ -14,6 +16,12 @@ Les features sont :
 - Reconnaissance des photos par prise d'image.
 - Reconnaissance dynamique des pièces via la caméra sous format vidéo.
 
+### Introduction
+
+L'objectif de ce projet est d'aider les paresseux mais aussi les malvoyants et toutes les personnes qui n'aiment pas compter leur argent de le faire à portée de main à l'aide d'une application Androïd. A la fois, simple efficace et ergonomique, le projet s'adapte facilement à toutes les situations et les possibilités. Après avoir suivi ces exemples, voici ce que vous arriverez à faire :
+
+![Example](https://scontent-cdg2-1.xx.fbcdn.net/v/t1.15752-9/32260472_1660789980643505_5876938600204992512_n.png?_nc_cat=0&oh=59c1aedb955c220c35fa995dc3314650&oe=5B7E6F81)
+![Example2](https://scontent-cdg2-1.xx.fbcdn.net/v/t34.18173-12/30422210_2015240285355430_1735805130_n.png?_nc_cat=0&oh=8bdb0a34c2313788d251db661d95e9b7&oe=5B091F96)
 ### Prérequis
 
 Plusieurs librairies, langages et API sont à télécharger pour faire fonctionner l'entrainement du projet.
