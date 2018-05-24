@@ -7,3 +7,5 @@ PecunIA est une application Androïd permettant de reconnaître des pièces de m
 Les features sont :
 - Reconnaissance des photos par prise d'image.
 - Reconnaissance dynamique des pièces via la caméra sous format vidéo.
+
+### Prérequis
