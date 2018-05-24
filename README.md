@@ -42,6 +42,8 @@ Java
 OpenCV
 ```
 
+Pour ce tutoriel, vous avez besoin de cloner le repository de [Tensorflow1.8](https://github.com/tensorflow/tensorflow/tree/r1.8) et d'installer [AndroidStudio](https://developer.android.com/studio/) puis Anaconda que nous allons voir tout de suite.
+
 #### Téléchargement est mise en place de l'environnement Anaconda
 Pour installer l'environnement, veuillez télécharger [Anaconda](https://www.anaconda.com/download/) nous utilisons la version 3.6 mais rien n'empêche de prendre une version plus élevée ou inférieure car lors du lancement du script, on va créer un environnement 3.5 compatible avec tout le monde, un gestionnaire d'environnement portable et versatile
 
