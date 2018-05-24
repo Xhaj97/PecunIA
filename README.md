@@ -1,4 +1,7 @@
+lien vers un example pour l'entrainement d'un modèle avec tensorflow:
 https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10
+lien vers le code permettant l'entrainement avec tensorflow (le code se trouve dans tensorflow1/models/research/object_detection)
+https://1drv.ms/u/s!AgScJCf_F-3CitYsUC4BeDeZPvph3Q
 
 ## PecunIA, l'argent à bout de smartphone
 
